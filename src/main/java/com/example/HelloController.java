@@ -25,7 +25,7 @@ public class HelloController {
     public String get(ModelAndView modelAndView) {
         System.out.println(boyProperties.getWeight());
         User user = userMapper.selectUser();
-        modelAndView.addObject("list",user);
+        modelAndView.addObject("list-test",user);
         modelAndView.setViewName("list");
         logger.info("this is id:{} count:{}",user.getId(),user.getUserCont());
         return "Hello Spring Boot！" + user.getUserCont()+ user.getUserCont();
