@@ -5,7 +5,7 @@
 <configuration>
     <settings>
         <setting name="mapUnderscoreToCamelCase" value="true" />
-    </settings>
+        <setting name="logImpl" value="STDOUT_LOGGING" /></settings>
     <typeAliases>
         <!--
         通过package, 可以直接指定package的名字， mybatis会自动扫描你指定包下面的javabean,

@@ -13,7 +13,7 @@ public abstract   class Duck {
     abstract void display();
     void quack(){
         System.out.println("嘎嘎嘎");
-    };
+    }
     void fly(){
         flyingStaregy.flys();
     }
