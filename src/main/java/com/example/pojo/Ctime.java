@@ -12,4 +12,5 @@ public class Ctime {
 
     private LocalDateTime start;
     private LocalDateTime end;
+    private int age;
 }
