@@ -4,9 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.mapper.UserMapper">
     <select id="selectUser" resultType="user">
-        SELECT * FROM  user WHERE  id=1
+        SELECT * FROM  user WHERE
+         weight = 1
+         and `type` != 'lin'
+         and `type` != 'ke'
     </select>
     <select id="selectTime" resultType="user">
-        SELECT * FROM  user WHERE  time BETWEEN #{start} AND #{end}
+        SELECT * FROM  user
     </select>
 </mapper>
